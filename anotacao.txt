@@ -1,0 +1,44 @@
+jefersonb88
+OP8oV4bQ8W00229X
+
+admin
+admin123
+
+npm install mongodb
+
+mongodb+srv://jefersonb88:OP8oV4bQ8W00229X@cluster0.io0iuxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://jefersonb88:OP8oV4bQ8W00229X@cluster0.io0iuxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
+
+async function run() {
+  try {
+    // Connect the client to the server	(optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    await client.db("admin").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
+}
+run().catch(console.dir);
+
+
+
+//Criar senha hash c bcrypt
+// import bcrypt from 'bcrypt';
+// const x = bcrypt.hashSync('admdev13', 10)
+// console.log(`\nHash gerado: ${x}\n`);

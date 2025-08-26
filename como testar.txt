@@ -1,0 +1,12 @@
+http://localhost:3000/segredo
+http://localhost:3000/usuarios
+http://localhost:3000/logout
+
+Teste com postman POST Body raw JSON => http://localhost:3000/registro
+No corpo coloque {"username": "seu_usuario", "password": "sua_senha"}
+
+http://localhost:3000/public/index.html
+http://localhost:3000/public/logar.html
+
+http://localhost:3000/protected/regulamento.html
+http://localhost:3000/protected/scoreBoard.html
