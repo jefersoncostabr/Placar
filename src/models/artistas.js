@@ -13,3 +13,5 @@ const artistasSchema = new mongoose.Schema({
 const artista = mongoose.model('artistas', artistasSchema);
 
 export default artista;
+
+//Apagar
