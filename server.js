@@ -32,4 +32,4 @@ const instricaoCadastrar = 'Teste com postman POST Body raw JSON =>';
 const urlCadastrar = `http://localhost:${PORT}/registro\n`;
 const corpoCadastrar = `No corpo coloque {"username": "seu_usuario", "password": "sua_senha"}\n`;
 
-app.listen(PORT, () => console.log(msgServidor, segredo, usuarios, logout, index, logar, regulamento, scoreBoard, instricaoCadastrar, urlCadastrar, corpoCadastrar));
+app.listen(PORT, "0.0.0.0", () => console.log(msgServidor, segredo, usuarios, logout, index, logar, regulamento, scoreBoard, instricaoCadastrar, urlCadastrar, corpoCadastrar));
