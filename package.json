@@ -1,7 +1,7 @@
 {
   "name": "auth-bcrypt",
   "version": "1.0.0",
-  "main": "basic_auth_node.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
@@ -17,7 +17,6 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "mongodb": "^6.18.0",
-    "mongoose": "^8.18.0",
-    "render": "^0.1.4"
+    "mongoose": "^8.18.0"
   }
 }
