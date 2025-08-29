@@ -42,3 +42,7 @@ run().catch(console.dir);
 // import bcrypt from 'bcrypt';
 // const x = bcrypt.hashSync('admdev13', 10)
 // console.log(`\nHash gerado: ${x}\n`);
+
+
+// "bcrypt": "^6.0.0",
+// "nodemon": "^3.1.10"
