@@ -1,4 +1,3 @@
-
 import express from 'express';
 import artista from '../src/models/artistas.js';
 

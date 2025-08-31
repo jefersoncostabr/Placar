@@ -7,8 +7,9 @@
     // ];
 
     async function getArtistas() {
+        const urlBase = 'https://placar-gamificado-teste.onrender.com';
         try {
-            const response = await fetch('http://localhost:3000/usArtistas/artistas');
+            const response = await fetch(urlBase + '/usArtistas/artistas');
             const data = await response.json();
             return data;
         } catch (error) {
@@ -60,8 +61,9 @@
 
         const tdPontos = document.createElement("td");
         tdPontos.textContent = item.frequencia + item.drill + item.extra;
-        tdPontos.style.color = "#FFD84B";
-        tdPontos.style.fontWeight = "bold";
+        tdPontos.id = "tdPontos";
+        // tdPontos.style.color = "#FFD84B";
+        // tdPontos.style.fontWeight = "bold";
         tr.appendChild(tdPontos);
 
         tabela.appendChild(tr);

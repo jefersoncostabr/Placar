@@ -26,18 +26,41 @@ table {
 th, td {
     padding: 15px 25px;
     border: 1px solid #fff;
+    width:fit-content;
 }
 
 th {
     font-weight: bold;
 }
 
-td:nth-child(2) {
+td:nth-child(1) {
     font-weight: bold;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
 }
 
-.stars {
+#tdPontos {
+    color: #FFD84B;
+    font-weight: bold;
+}
+
+/* .stars {
     color: gold;
     font-size: 1.5rem;
+} */
+
+@media (max-width: 393px) {}
+  
+/* @media (min-width: 394px) and (max-width: 618px) { */
+@media (max-width: 618px) {
+    h1{
+        font-size: 1.5rem;
+    }
+
+    table {
+        font-size: 0.6rem;
+    }   
 }
+
+@media (min-width: 619px) and (max-width: 768px) {}
+
+@media (min-width: 769px) {}
