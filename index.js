@@ -1,9 +1,7 @@
-// server.js -> npm rum dev
 import express from 'express';
 import dotenv from 'dotenv';
-import router from './routes.js';
+import router from './routes/routes.js';
 import conectaNaDatabase from './src/config/dbConnect.js';
-
 
 
 const conexao = await conectaNaDatabase();
